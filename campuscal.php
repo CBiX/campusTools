@@ -43,6 +43,7 @@ try {
 		header('HTTP/1.0 401 Unauthorized');
 		exit;
 	}*/
+	header('Content-Type: text/calendar; charset=UTF-8');
 	die($ics);
 } catch(Exception $e) {
 	die('Error: ' . $e->getMessage());
